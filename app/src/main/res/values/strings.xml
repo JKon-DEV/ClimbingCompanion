@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Climbing Companion</string>
+
+    <string name="txt_grade">Grade: %1$s</string>
+    <string name="txt_location">Location: %1$s</string>
+    <string name="txt_status">Status: %1$s</string>
+    <string name="txt_notes">Notes: %1$s</string>
+    <string name="txt_add_edit_title">Add / Edit Climb</string>
+    <string name="txt_media">Attach media</string>
+    <string name="txt_view_video">View Video</string>
+
+    <string name="btn_attach_image">Attach Image</string>
+    <string name="btn_attach_video">Attach Video</string>
+    <string name="btn_save">Save and Exit</string>
+    <string name="btn_delete">Delete entry</string>
+
+    <string name="hint_climb_name">Climb Name*</string>
+    <string name="hint_climb_grade">Climb Grade*</string>
+    <string name="hint_climb_location">Climb Location*</string>
+    <string name="hint_climb_status">Status* (Projecting / Sent / Flash / etc)</string>
+    <string name="hint_climb_notes">Notes (optional)</string>
+
+
+</resources>
