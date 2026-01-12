@@ -22,7 +22,7 @@ class MainMenuActivity : AppCompatActivity() {
         }
 
         trainingBtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, TimerListActivity::class.java)
             startActivity(intent)
         }
     }
