@@ -6,6 +6,7 @@ import TimerRoutineDao
 import TimerRoutine
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.switchMap
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 
 
@@ -14,6 +15,10 @@ class TimerRoutineViewModel(private val dao: TimerRoutineDao) : ViewModel() {
 
     fun addTimerRoutine(timer: TimerRoutine) = viewModelScope.launch {
         dao.insert(timer)
+    }
+
+    fun getRoutineByIdFlow(id: Int): Flow<TimerRoutine?> {
+        return dao.getRoutineByIdFlow(id)
     }
 
     fun updateTimerRoutine(timer: TimerRoutine) = viewModelScope.launch {

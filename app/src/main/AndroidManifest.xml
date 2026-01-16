@@ -25,6 +25,8 @@
             android:exported="false"/>
         <activity android:name=".ui.TimerListActivity"
             android:exported="false"/>
+        <activity android:name=".ui.RunTimerRoutine"
+            android:exported="false"/>
         <activity
             android:name=".ui.MainMenuActivity"
             android:exported="true">

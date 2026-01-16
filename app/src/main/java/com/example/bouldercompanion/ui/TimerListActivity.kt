@@ -50,25 +50,17 @@ class TimerListActivity : AppCompatActivity() {
 
         adapter = TimerRoutineAdapter(
             emptyList(),
-            onClick = { climb ->
+            onClick = { timer ->
+                val intent = Intent(this, RunTimerRoutine::class.java)
+                intent.putExtra("TIMER_ID", timer.id)
+                startActivity(intent)
             },
-            onLongClick = { climb ->
+            onLongClick = { timer ->
             }
         )
 
         // Connect recyclerview with adapter
         timerList.adapter = adapter
-
-        val testTimer = TimerRoutine(
-            name = "Max Hangs",
-            sets = 5,
-            repsPerSet = 1,
-            hangTime = 10,
-            restBetweenReps = 0,
-            restBetweenSets = 180
-        )
-
-        timerRoutineViewModel.addTimerRoutine(testTimer)
 
         // Update recyclerview with climbs
         timerRoutineViewModel.timers.observe(this) { timers ->
