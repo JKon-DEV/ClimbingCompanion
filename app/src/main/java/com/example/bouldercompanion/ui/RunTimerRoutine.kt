@@ -84,7 +84,7 @@ class RunTimerRoutine : AppCompatActivity() {
                     phaseText.text = state.phase.name
                     timeText.text = "${state.timeRemaining}s"
                     setRepText.text =
-                        "Set ${state.currentSet}/${routine.sets} | " + "Rep ${state.currentRep}/${routine.repsPerSet}"
+                        "Set ${state.currentSet}/${routine.sets} | " + "Rep ${state.currentRep}/${routine.repsPerSet}" // this is grotty
                 }
             },
             onFinish = {

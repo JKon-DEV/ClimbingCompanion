@@ -52,7 +52,7 @@ class VideoPlayerActivity : AppCompatActivity() {
             }
         }
 
-        btnBack.setOnClickListener {
+        btnBack.setOnClickListener { // Button is hard to press sometimes
             finish()
         }
     }

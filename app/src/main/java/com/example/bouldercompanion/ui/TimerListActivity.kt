@@ -1,6 +1,5 @@
 package com.example.bouldercompanion.ui
 
-import TimerRoutine
 import TimerRoutineDao
 import TimerRoutineDatabase
 import android.content.Intent
@@ -15,8 +14,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.bouldercompanion.R
 import com.example.bouldercompanion.viewmodel.TimerRoutineViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-
-
 
 
 private lateinit var addTimerButton: FloatingActionButton
@@ -56,6 +53,9 @@ class TimerListActivity : AppCompatActivity() {
                 startActivity(intent)
             },
             onLongClick = { timer ->
+                val intent = Intent(this, AddEditTimerActivity::class.java)
+                intent.putExtra("TIMER_ID", timer.id)
+                startActivity(intent)
             }
         )
 
@@ -68,6 +68,8 @@ class TimerListActivity : AppCompatActivity() {
         }
 
         addTimerButton.setOnClickListener {
+            val intent = Intent(this, AddEditTimerActivity::class.java)
+            startActivity(intent)
         }
     }
 }

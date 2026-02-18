@@ -1,3 +1,5 @@
+// Database for timers.
+
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -24,7 +26,7 @@ abstract class TimerRoutineDatabase : RoomDatabase() {
                     TimerRoutineDatabase::class.java,
                     "timer_routine_database"
                 )
-                    .addCallback(object : RoomDatabase.Callback() {
+                    .addCallback(object : RoomDatabase.Callback() { // Populating the database on creation with the defaults.
 
                         override fun onCreate(db: SupportSQLiteDatabase) {
                             super.onCreate(db)

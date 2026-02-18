@@ -2,13 +2,11 @@ package com.example.bouldercompanion.ui
 
 import Climb
 import android.app.Activity
-import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.lifecycleScope
 import com.example.bouldercompanion.R
 import ClimbDatabase
 import androidx.core.view.ViewCompat
@@ -16,7 +14,6 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.bouldercompanion.viewmodel.ClimbViewModel
-import kotlinx.coroutines.launch
 import java.io.File
 
 class AddEditClimbActivity : AppCompatActivity() {
@@ -105,7 +102,7 @@ class AddEditClimbActivity : AppCompatActivity() {
         notesInput = findViewById(R.id.inputNotes)
         btnImage = findViewById(R.id.btnPickImage)
         btnVideo = findViewById(R.id.btnPickVideo)
-        btnSave = findViewById(R.id.btnSave)
+        btnSave = findViewById(R.id.btnSaveTimer)
 
         // getting id of climb to display if editing
         climbId = intent.getIntExtra("CLIMB_ID", -1).takeIf { it != -1 }

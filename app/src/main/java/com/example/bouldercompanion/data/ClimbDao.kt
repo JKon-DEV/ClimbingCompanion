@@ -1,3 +1,5 @@
+// Data access object for the Climb objects.
+
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert

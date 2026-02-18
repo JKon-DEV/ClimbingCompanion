@@ -1,9 +1,39 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.BoulderCompanion" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.BoulderCompanion" parent="Base.Theme.BoulderCompanion" />
+    <style name="Widget.App.OutlineButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">#000000</item>          <!-- black fill -->
+        <item name="strokeColor">#FFFFFF</item>            <!-- white outline -->
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="rippleColor">#33FFFFFF</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+    </style>
+
+    <style name="TextAppearance.App.White" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.BoulderCompanion" parent="Base.Theme.BoulderCompanion">
+        <item name="materialButtonStyle">@style/Widget.App.OutlineButton</item>
+
+
+        <!-- Default text color for most views -->
+        <item name="android:textColor">#FFFFFF</item>
+
+        <!-- For EditText / TextField input text -->
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorOnSurfaceVariant">#B3FFFFFF</item>
+
+        <!-- Cursor & hint color for text fields -->
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorOnPrimary">#000000</item>
+
+    </style>
+
 </resources>

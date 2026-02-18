@@ -8,14 +8,14 @@
     <string name="txt_add_edit_title">Add / Edit Climb</string>
     <string name="txt_media">Attach media</string>
     <string name="txt_view_video">View Video</string>
-    <string name="txt_menu_title">Welcome to Climbing Companion</string>
+    <string name="txt_menu_title">Climbing Companion</string>
 
     <string name="btn_attach_image">Attach Image</string>
     <string name="btn_attach_video">Attach Video</string>
     <string name="btn_save">Save and Exit</string>
     <string name="btn_delete">Delete entry</string>
-    <string name="btn_view_climb_list">Go to Climb list</string>
-    <string name="btn_training">Start training</string>
+    <string name="btn_view_climb_list">Climb List</string>
+    <string name="btn_training">Finger Training</string>
 
     <string name="hint_climb_name">Climb Name*</string>
     <string name="hint_climb_grade">Climb Grade*</string>

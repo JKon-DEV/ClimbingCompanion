@@ -1,3 +1,5 @@
+// Setting up room database to hold the climb objects.
+
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room

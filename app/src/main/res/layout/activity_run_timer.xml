@@ -5,9 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212">
+    android:background="#000000">
 
-    <!-- Routine Name -->
+
     <TextView
         android:id="@+id/timerName"
         android:layout_width="0dp"
@@ -22,7 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Phase -->
     <TextView
         android:id="@+id/phaseText"
         android:layout_width="wrap_content"
@@ -36,7 +35,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Main Timer -->
     <TextView
         android:id="@+id/timeText"
         android:layout_width="wrap_content"
@@ -50,7 +48,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <!-- Set / Rep -->
     <TextView
         android:id="@+id/setRepText"
         android:layout_width="wrap_content"
@@ -63,7 +60,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
-    <!-- Start Button -->
     <Button
         android:id="@+id/startButton"
         android:layout_width="0dp"
@@ -80,7 +76,6 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"/>
 
-    <!-- Stop Button -->
     <Button
         android:id="@+id/stopButton"
         android:layout_width="0dp"

@@ -11,7 +11,7 @@ class FingerTimerEngine(
 
     private val state = TimerState(
         phase = TimerPhase.PREP,
-        timeRemaining = 10   // Global 10s countdown
+        timeRemaining = 10   // Global 10s countdown before any routine
     )
 
     private var timer: CountDownTimer? = null
